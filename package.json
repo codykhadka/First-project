@@ -1,5 +1,10 @@
 {
+  "scripts": {
+    "start": "npm start --prefix Front-end",
+    "dev": "npm start --prefix Front-end"
+  },
   "dependencies": {
+    "crypto-js": "^4.2.0",
     "nodemailer": "^8.0.9"
   }
 }

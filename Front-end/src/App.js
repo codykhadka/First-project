@@ -1,11 +1,11 @@
-import './App.css';
+import './css/App.css';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import authAPI from './lib/api';
-import LoginSignup from './components/LoginSignup/LoginSignup';
-import Home from './pages/Home';
-import Dashboard from './pages/Dashboard';
-import ProtectedRoute from './components/ProtectedRoute';
+import authAPI from './js/lib/api';
+import LoginSignup from './js/pages/LoginSignup';
+import Home from './js/pages/Home';
+import Dashboard from './js/pages/Dashboard';
+import ProtectedRoute from './js/components/ProtectedRoute';
 
 function AppRoutes() {
   const [user, setUser] = useState(null);

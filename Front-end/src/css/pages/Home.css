@@ -25,7 +25,8 @@
 .ink-header-inner {
   max-width: 1260px;
   margin: 0 auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 24px;
   height: 68px;
@@ -45,9 +46,10 @@
 }
 
 .ink-search-wrapper {
-  flex: 1;
+  width: 100%;
   max-width: 440px;
   position: relative;
+  justify-self: center;
 }
 
 .ink-search-icon {
@@ -88,6 +90,7 @@
   gap: 8px;
   align-items: center;
   flex-shrink: 0;
+  justify-self: end;
 }
 
 .ink-btn-icon {
@@ -256,6 +259,7 @@
 
 .ink-card-body {
   padding: 16px;
+      padding-left: 10px;
 }
 
 .ink-card-title {
@@ -309,6 +313,7 @@
 .ink-card-payments {
   display: flex;
   gap: 6px;
+  flex-wrap: wrap;
 }
 
 .ink-pay-chip {
@@ -720,6 +725,7 @@
 
 @media (max-width: 768px) {
   .ink-header-inner {
+    display: flex;
     flex-wrap: wrap;
     height: auto;
     padding: 12px 0;

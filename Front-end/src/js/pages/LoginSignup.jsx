@@ -1,11 +1,11 @@
 
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './LoginSignup.css'
-import { useAuth } from '../../hooks'
-import user_icon from '../Assets/person.png'
-import email_icon from '../Assets/email.png'
-import password_icon from '../Assets/password.png'
+import '../../css/components/LoginSignup/LoginSignup.css'
+import { useAuth } from '../hooks'
+import user_icon from '../../components/Assets/person.png'
+import email_icon from '../../components/Assets/email.png'
+import password_icon from '../../components/Assets/password.png'
 
 const LoginSignup = () => {
     const [action, setAction] = useState("sign up");
